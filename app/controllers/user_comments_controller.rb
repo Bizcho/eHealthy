@@ -1,4 +1,4 @@
-class UserCommentsController < ApplicationController
+class UserCommentsController < WebUserApplicationController
   before_action :set_user_comment, only: [:show, :edit, :update, :destroy]
 
   # GET /user_comments

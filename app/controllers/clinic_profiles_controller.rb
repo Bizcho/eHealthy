@@ -1,4 +1,4 @@
-class ClinicProfilesController < WebApplicationController
+class ClinicProfilesController < WebUserApplicationController
   before_action :set_clinic_profile, only: [:show, :edit, :update, :destroy]
 
   # GET /clinic_profiles
