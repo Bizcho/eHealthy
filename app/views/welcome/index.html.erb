@@ -8,7 +8,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Life eHealthy</a>
+                <a class="navbar-brand page-scroll" href="#page-top"  style="color:#4BD8EB; font-style: oblique;font-size: 550%; text-align: center">Life eHealthy</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -18,16 +18,16 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="/present_comunity">Comunidades</a>
+                        <a class="page-scroll" href="/present_comunity">Hospitales</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="/services">Servicios</a>
+                        <a class="page-scroll" href="/services">Quienes somos</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="/events">Eventos</a>
+                        <a class="page-scroll" href="/events">Servicios</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="/topics">Foros</a>
+                        <a class="page-scroll" href="/topics">Foro</a>
                     </li>
                     
                     <%if !user_signed_in?%>
@@ -59,8 +59,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Comunidades</h2>
-                    <h3 class="section-subheading text-muted">Impulsando el NEIGHWORKING</h3>
+                    <h2 class="section-heading">Quienes somos</h2>
+                    <h3 class="section-subheading text-muted">Quienes buscamos que estes bien siempre</h3>
                 </div>
             </div>
             <div class="row text-center">
@@ -70,23 +70,23 @@
                         <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">OBJETIVO</h4>
-                    <p class="text-muted">Vecinos trabajando juntos para tener parques en condiciones excelentes</p>
+                    <p class="text-muted">ofrecer asesorías eficaces sobre su salud, apoyando en el diagnóstico médico con herramientas avanzadas de información</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">TE NECESITAMOS!!</h4>
-                    <p class="text-muted">Puedes pertenecer a varias comunidades</p>
+                    <h4 class="service-heading">SERVICIO</h4>
+                    <p class="text-muted">Sistema experto basado en conocimientos de medicina</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">UNETE</h4>
-                    <p class="text-muted">Forma parte de GREEN NEIGHBORHOOD y cambia tu entorno</p>
+                    <h4 class="service-heading">NUESTRO APORTE</h4>
+                    <p class="text-muted">Sistema en línea que unifica las mejores tecnologías de la información para el asesoramiento médico y nutricional.</p>
                 </div>
             </div>
         </div>
@@ -110,11 +110,11 @@
                             </div>
                         </div>
 
-                        <%=image_tag "riego.jpg",{class:"img-responsive", alt:""}%>                        
+                        <%=image_tag "diag.png",{class:"img-responsive", alt:""}%>                        
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Control de riego</h4>
-                        <p class="text-muted">Monitoreo de riegos</p>
+                        <h4>Diagnostico Preeliminar</h4>
+                        <p class="text-muted">Hacemos el diagnostico mendiante una serie de preguntas, usando nuestro sistema experto </p>
                     </div>
                 </div>
                 
@@ -125,11 +125,11 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <%=image_tag "luz.jpg",{class:"img-responsive", alt:""}%>
+                        <%=image_tag "medic.jpg",{class:"img-responsive", alt:""}%>
                     </a>
                      <div class="portfolio-caption">
-                        <h4>Control de electricidad</h4>
-                        <p class="text-muted">Veriificarion de el estado de lamparas</p>
+                        <h4>Medicos</h4>
+                        <p class="text-muted">Te ponemos en contacto con el mejor medico                                                                                                          </p>
                     </div>
                 </div>
                  <div class="col-md-4 col-sm-6 portfolio-item">
@@ -139,24 +139,106 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <%=image_tag "limpio.jpg",{class:"img-responsive", alt:""}%>
+                        <%=image_tag "emer.jpg",{class:"img-responsive", alt:""}%>
                     </a>
                      <div class="portfolio-caption">
-                        <h4>Limpieza</h4>
-                        <p class="text-muted">Organizacion de la limpieza</p>
+                        <h4>Emergencias</h4>
+                        <p class="text-muted">Alguna emergencaa se actua de inmediato con el hospital mas cercano</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- GoogleMaps ex. -->
-    <section id="portfolio" class="bg-light-gray">
+    <!-- Team Section -->
+    <section id="team" class="bg-light-gray">
         <div class="container">
             <div class="row">
-                <div class="col-md-offset-2 col-sm-6">
-                    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDcI3FUdPxo1O_ldvBjJFHrmGiLNxuzrlY'></script>
-                    <div style='overflow:hidden;height:400px;width:700px;'><div id='gmap_canvas' style='height:400px;width:700px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='https://www.embedmap.net/'>embed google maps in website</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=67dee47bc7579cd33f9074e1d44feea811df66b4'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:15,center:new google.maps.LatLng(31.7787287,-106.47966200000002),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(31.7787287,-106.47966200000002)});infowindow = new google.maps.InfoWindow({content:'<strong>El Paso, Sierra Medical Center</strong><br>Medical Center St<br>79901 El Paso<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Our Amazing Team</h2>
+                    <h3 class="section-subheading text-muted">Todo lo hacemos por cuidarte.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <%=image_tag "angel.jpg",{class:"img-responsive", alt:""}%>
+                        <h4>Angel Ponce</h4>
+                        <p class="text-muted">Gerente de operaciones</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+
+                        <%=image_tag "luis.jpg",{class:"img-responsive", alt:""}%>                     
+                        <h4>Luis Valdez</h4>
+                        <p class="text-muted">Gerente de desarrollo</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <%=image_tag "daisy.jpg",{class:"img-responsive", alt:""}%>
+                        <h4>Daisy Alba</h4>
+                        <p class="text-muted">Director de tecnologia</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                  <div class="col-sm-4">
+                    <div class="team-member">
+                        <%=image_tag "sergio.jpg",{class:"img-responsive", alt:""}%>
+                        <h4>Sergio Gonzalez</h4>
+                        <p class="text-muted">Director de ingenieria</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                  <div class="col-sm-4">
+                    <div class="team-member">
+                        <%=image_tag "ruben.jpg",{class:"img-responsive", alt:""}%>
+                        <h4>Ruben Gomez</h4>
+                        <p class="text-muted">Director de sistemas</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <p class="large text-muted"></p>
                 </div>
             </div>
         </div>
@@ -167,7 +249,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Your Website 2016</span>
+                    <span class="copyright">Copyright &copy; Life eHealthy2016</span>
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
