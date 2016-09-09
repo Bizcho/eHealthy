@@ -1,4 +1,4 @@
-class HospitalsController < ApplicationController
+class HospitalsController < WebApplicationController
   before_action :set_hospital, only: [:show, :edit, :update, :destroy]
 
   # GET /hospitals

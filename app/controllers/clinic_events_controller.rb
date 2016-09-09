@@ -1,4 +1,4 @@
-class ClinicEventsController < ApplicationController
+class ClinicEventsController < WebApplicationController
   before_action :set_clinic_event, only: [:show, :edit, :update, :destroy]
 
   # GET /clinic_events
