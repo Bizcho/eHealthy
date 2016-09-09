@@ -1,33 +1,54 @@
-<p id="notice"><%= notice %></p>
+<section class='content-header'>
+  <h1>Peticiones<small></small></h1>
+</section>
+<section class='content'>
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="box">
+        <div class="box-header">
+          <h3 class="box-title">Listado de peticiones de hospitales</h3>
 
-<h1>Listing Hospital Requests</h1>
+          <div class="box-tools">
+            <div class="input-group input-group-sm" style="width: 150px;">
+              <input type="text" name="table_search" class="form-control pull-right" placeholder="Search">
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Email</th>
-      <th>Telephone</th>
-      <th>Message</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+              <div class="input-group-btn">
+                <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body table-responsive no-padding">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Telephone</th>
+                <th>Message</th>
+                <th colspan="3"></th>
+              </tr>
+            </thead>
 
-  <tbody>
-    <% @hospital_requests.each do |hospital_request| %>
-      <tr>
-        <td><%= hospital_request.name %></td>
-        <td><%= hospital_request.email %></td>
-        <td><%= hospital_request.telephone %></td>
-        <td><%= hospital_request.message %></td>
-        <td><%= link_to 'Show', hospital_request %></td>
-        <td><%= link_to 'Edit', edit_hospital_request_path(hospital_request) %></td>
-        <td><%= link_to 'Destroy', hospital_request, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Hospital request', new_hospital_request_path %>
+            <tbody>
+              <% @hospital_requests.each do |hospital_request| %>
+                <tr>
+                  <td><%= hospital_request.name %></td>
+                  <td><%= hospital_request.email %></td>
+                  <td><%= hospital_request.telephone %></td>
+                  <td><%= hospital_request.message %></td>
+                  <td><%= link_to 'Show', hospital_request %></td>
+                  <td><%= link_to 'Edit', edit_hospital_request_path(hospital_request) %></td>
+                  <td><%= link_to 'Destroy', hospital_request, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                </tr>
+              <% end %>
+            </tbody>
+          </table>
+        </div>
+        <!-- /.box-body -->
+      </div>
+      <!-- /.box -->
+    </div>
+  </div>  
+</section>
