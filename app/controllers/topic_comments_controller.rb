@@ -1,4 +1,4 @@
-class TopicCommentsController < ApplicationController
+class TopicCommentsController < WebApplicationController
   before_action :set_topic_comment, only: [:show, :edit, :update, :destroy]
 
   # GET /topic_comments
