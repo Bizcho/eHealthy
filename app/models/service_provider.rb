@@ -1,4 +1,6 @@
 class ServiceProvider < ActiveRecord::Base
+	has_many :services_to_service_providers
+  	has_many :services, through: :services_to_service_providers
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
