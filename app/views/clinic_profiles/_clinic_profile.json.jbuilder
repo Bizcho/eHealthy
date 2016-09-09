@@ -1,0 +1,2 @@
+json.extract! clinic_profile, :id, :first_name, :last_name, :birthday, :relationship, :genre, :blood, :height, :weight, :created_at, :updated_at
+json.url clinic_profile_url(clinic_profile, format: :json)

@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Diagnostic:</strong>
+  <%= @clinic_event.diagnostic %>
+</p>
+
+<p>
+  <strong>Prediagnostic:</strong>
+  <%= @clinic_event.prediagnostic %>
+</p>
+
+<p>
+  <strong>Symptoms:</strong>
+  <%= @clinic_event.symptoms %>
+</p>
+
+<p>
+  <strong>Date start:</strong>
+  <%= @clinic_event.date_start %>
+</p>
+
+<p>
+  <strong>Date finish:</strong>
+  <%= @clinic_event.date_finish %>
+</p>
+
+<p>
+  <strong>Prescription:</strong>
+  <%= @clinic_event.prescription %>
+</p>
+
+<%= link_to 'Edit', edit_clinic_event_path(@clinic_event) %> |
+<%= link_to 'Back', clinic_events_path %>

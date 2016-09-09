@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @clinic_profile.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @clinic_profile.last_name %>
+</p>
+
+<p>
+  <strong>Birthday:</strong>
+  <%= @clinic_profile.birthday %>
+</p>
+
+<p>
+  <strong>Relationship:</strong>
+  <%= @clinic_profile.relationship %>
+</p>
+
+<p>
+  <strong>Genre:</strong>
+  <%= @clinic_profile.genre %>
+</p>
+
+<p>
+  <strong>Blood:</strong>
+  <%= @clinic_profile.blood %>
+</p>
+
+<p>
+  <strong>Height:</strong>
+  <%= @clinic_profile.height %>
+</p>
+
+<p>
+  <strong>Weight:</strong>
+  <%= @clinic_profile.weight %>
+</p>
+
+<%= link_to 'Edit', edit_clinic_profile_path(@clinic_profile) %> |
+<%= link_to 'Back', clinic_profiles_path %>

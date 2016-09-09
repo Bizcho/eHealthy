@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  diagnostic: MyString
+  prediagnostic: MyString
+  symptoms: MyString
+  date_start: 2016-09-09
+  date_finish: 2016-09-09
+  prescription: MyString
+
+two:
+  diagnostic: MyString
+  prediagnostic: MyString
+  symptoms: MyString
+  date_start: 2016-09-09
+  date_finish: 2016-09-09
+  prescription: MyString

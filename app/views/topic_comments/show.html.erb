@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Message:</strong>
+  <%= @topic_comment.message %>
+</p>
+
+<p>
+  <strong>Response to:</strong>
+  <%= @topic_comment.response_to %>
+</p>
+
+<%= link_to 'Edit', edit_topic_comment_path(@topic_comment) %> |
+<%= link_to 'Back', topic_comments_path %>

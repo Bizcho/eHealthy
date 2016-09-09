@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @hospital_request.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @hospital_request.email %>
+</p>
+
+<p>
+  <strong>Telephone:</strong>
+  <%= @hospital_request.telephone %>
+</p>
+
+<p>
+  <strong>Message:</strong>
+  <%= @hospital_request.message %>
+</p>
+
+<%= link_to 'Edit', edit_hospital_request_path(@hospital_request) %> |
+<%= link_to 'Back', hospital_requests_path %>

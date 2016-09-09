@@ -1,4 +1,18 @@
 Rails.application.routes.draw do
+  resources :hospital_requests
+  resources :services
+  resources :rooms
+  resources :hospitals
+  devise_for :service_providers
+  devise_for :administrators
+  devise_for :admin_service_providers
+  resources :topics
+  resources :topic_comments
+  resources :topics
+  devise_for :specialist_users
+  resources :user_comments
+  resources :clinic_events
+  resources :clinic_profiles
   devise_for :users
   root 'welcome#index'
   # The priority is based upon order of creation: first created -> highest priority.
