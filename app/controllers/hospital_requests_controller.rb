@@ -1,4 +1,4 @@
-class HospitalRequestsController < ApplicationController
+class HospitalRequestsController < WebApplicationController
   before_action :set_hospital_request, only: [:show, :edit, :update, :destroy]
 
   # GET /hospital_requests
